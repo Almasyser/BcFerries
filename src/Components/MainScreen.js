@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MainScreen.css";
 
-function MainScreen({ parameters }) {
+function MainScreen({ parameter }) {
   const [baseTimes, setBaseTimes] = useState([]);
-  setBaseTimes(parameters.schedule.BOW.HSB.sailings);
+  useEffect(() => {
+    if (
+      parameter &&
+      parameter.schedule &&
+      parameter.schedule.BOW &&
+      parameter.schedule.BOW.HSB &&
+      parameter.schedule.BOW.HSB.sailings
+    ) {
+      setBaseTimes(parameter.schedule.BOW.HSB.sailings);
+    }
+  }, [parameter]);
+
   return (
     <div className="container">
       <h1>Affichage</h1>
