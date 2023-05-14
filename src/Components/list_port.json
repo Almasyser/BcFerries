@@ -1,0 +1,32 @@
+
+{"TSA": [
+    "SWB",
+    "SGI",
+    "DUK"
+],
+"SWB": [
+    "TSA",
+    "FUL",
+    "SGI"
+],
+"HSB": [
+    "NAN",
+    "LNG",
+    "BOW"
+],
+"DUK": [
+    "TSA"
+],
+"LNG": [
+    "HSB"
+],
+"NAN": [
+    "HSB"
+],
+"FUL": [
+    "SWB"
+],
+"BOW": [
+    "HSB"
+]
+}

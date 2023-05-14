@@ -8,13 +8,14 @@ function FindFerries() {
     axios
       .get("https://www.bcferriesapi.ca/api/")
       .then((res) => {
-        // console.log(res.data);
+        console.log(res.data);
         setData(res.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
+
   return (
     <>
       <MainScreen parameter={data} />
