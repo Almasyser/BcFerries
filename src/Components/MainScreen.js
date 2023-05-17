@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./MainScreen.css";
 
-function MainScreen({ parameter }) {
+function MainScreen({ parameter }, { listPort }) {
   const [baseTimes, setBaseTimes] = useState([]);
+
   useEffect(() => {
     if (
       parameter &&
@@ -14,7 +15,6 @@ function MainScreen({ parameter }) {
       setBaseTimes(parameter.schedule.BOW.HSB.sailings);
     }
   }, [parameter]);
-
   return (
     <div className="container">
       <h1>Affichage</h1>
