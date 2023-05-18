@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MainScreen.css";
 
-function MainScreen({ parameter }, { listPort }) {
+function MainScreen({ parameter }) {
   const [baseTimes, setBaseTimes] = useState([]);
 
   useEffect(() => {

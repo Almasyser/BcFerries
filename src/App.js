@@ -1,10 +1,12 @@
 import "./App.css";
 import FindFerries from "./Components/FindFerries";
+import SelectPort from "./Components/selectPort";
 
 function App() {
   return (
     <div className="App">
-      <FindFerries />
+      <SelectPort />
+      {/* <FindFerries /> */}
     </div>
   );
 }
